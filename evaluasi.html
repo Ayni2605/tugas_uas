@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluasi</title>
+    <style>
+         .wrapper{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: rgb(54, 135, 194);
+            box-shadow: rgba(0, 0, 0, 0.5);
+            width: 100%;
+            height: 80px;
+        }
+        .logo,img{
+            display: flex;
+            padding: 5px;
+            width: 50px;
+            margin: auto left;
+        }
+        .gambar{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 300px;
+        }
+
+        .form{
+            margin: 10px;
+            padding: 10px;
+        }
+   
+    </style>
+</head>
+<body>
+    <header>
+            <div class="wrapper">
+                <div class="logo">
+                <img src="https://png.pngtree.com/png-vector/20240314/ourmid/pngtree-trendy-chlorofluorocarbon-concepts-png-image_11953966.png" alt="">
+                <div style="color: aliceblue; font-family: Georgia, 'Times New Roman', Times, serif;">Media Pembelajaran Kimia</div></div> 
+            
+                <div><a href="index.html">Kembali ke home</a></div>
+            </div>   
+        <div>
+        <img src="./asset/bg_evaluasi.png" alt="" class="gambar"> 
+        </div>
+    </header>
+
+    <div class="form">
+    <fieldset>
+        <legend>Kerjakan soal dibawah ini sebagai bahan evaluasi!</legend>
+    <form action="">
+        <ol>
+            <li>Molekul H2SO4 dalam larutan terurai menjadi ion (pilih lebih dari 1 jawaban)
+                <p> <input type="checkbox">2H+ 
+                    <input type="checkbox">SO42-
+                    <input type="checkbox">S2-
+                    <input type="checkbox">H2+
+                    <input type="checkbox">O2-</li></p>
+            <li>Atom atau sekelompok atom yang bermuatan negatif disebut 
+                <p> <input type="radio" name="atom">Unsur 
+                    <input type="radio" name="atom">Molekul
+                    <input type="radio" name="atom">Anion
+                    <input type="radio" name="atom">Kation</li></p>
+            <li>Di antara molekul berikut yang termasuk molekul senyawa adalah 
+                <p> <input type="radio" name="senyawa">H2
+                    <input type="radio" name="senyawa">O3
+                    <input type="radio" name="senyawa">Cl2
+                    <input type="radio" name="senyawa">NO</li></p>
+            <li>Berikut ini yang merupakan molekul unsur adalah 
+                <p> <input type="radio" name="unsur">H2O
+                    <input type="radio" name="unsur">HCl
+                    <input type="radio" name="unsur">NaOH
+                    <input type="radio" name="unsur">H2</li></p>
+            <li>Yang manakah antara berikut menerangkan maksud isotop
+                <p> <input type="radio" name="isotop">atom-atom unsur tertentu yang mempunyai bilangan proton yang sama tetapi bilangan elektron yang berbeda</p>
+                <p> <input type="radio" name="isotop">atom-atom unsur tertentu yang mempunyai bilangan proton yang sama tetapi bilangan neutron yang berbeda</p> 
+                <p> <input type="radio" name="isotop">atom-atom unsur tertentu yang mempunyai bilangan proton yang berbeda tetapi bilangan neutron yang sama</p>
+                <p> <input type="radio" name="isotop">atom-atom unsur tertentu yang mempunyai bilangan elektron yang berbeda tetapi bilangan neutron yang sama</p></li>
+        </ol>
+    
+    <button onclick="hello()">Kirim</button>
+    </form>
+    </fieldset>
+    </div>
+    <script>
+        function hello(){
+            alert("Jawaban telah dikirim, Terima kasih!");
+        }
+        const btnLogin = document.getElementById("hello-pengunjung");
+    </script>
+</body>
+</html>

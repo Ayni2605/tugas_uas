@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Pembelajaran</title>
+    <style>
+        .wrapper{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            background-color: rgb(54, 135, 194);
+            box-shadow: rgba(0, 0, 0, 0.5);
+            width: 100%;
+            height: 80px;
+        }
+        .logo,img{
+            display: flex;
+            padding: 5px;
+            width: 50px;
+            margin: auto left;
+        }
+        .nav,ul,li,a{
+            list-style-type: none;
+            display: flex;
+            justify-content: space-between;
+            padding: 5px;
+            text-decoration: none;
+            color: aliceblue;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .gambar{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 300px;
+        }
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0;
+            padding: 20px;
+            align-items: center;
+            justify-content: space-between;
+        }
+        p{
+            align-items: center;
+            text-align: center;
+        }
+        .copyright{
+            color: rgb(0, 0, 63);
+            text-align: center;
+            align-items: center;
+        }
+        .active{
+            background-color: rgba(3, 3, 2, 0.5);
+            color: white;
+            padding: 5px;
+        }
+        .nav>ul>li>a:hover{
+        color: rgb(3, 3, 2, 0.5);
+        transition: all .3s ease-in-out;
+        }
+        .active:hover{
+        color: white !important;
+        }
+    </style>
+</head>
+<body>
+     <header>
+        <div class="wrapper">
+            <div class="logo">
+                <img src="https://png.pngtree.com/png-vector/20240314/ourmid/pngtree-trendy-chlorofluorocarbon-concepts-png-image_11953966.png" alt="">
+            <div style="color: aliceblue; font-family: Georgia, 'Times New Roman', Times, serif;">Media Pembelajaran Kimia</div></div>   
+        <div class="nav">
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#tujuan">Tujuan</a></li>
+                <li><a href="#materi">Materi</a></li>
+                <li><a href="#video">Video</a></li>
+                <li><a href="#simulasi">Simulasi</a></li>
+                <li><a href="#evaluasi">Evaluasi</a></li>
+            </ul>
+        </div>  
+        </div>
+        <div>
+        <img src="./asset/bg.png" alt="" class="gambar"> 
+        </div>
+     </header>
+    
+    <div class="container">
+        <section id="home">
+            <div>
+                <div><a href="#"><img src="./asset/house.png" alt="" width="300px" height="100px"></a>
+                <p>Home</p>
+                </div> 
+            </div>
+        </section>
+
+        <section id="tujuan">
+            <div>
+            <div><a href="tujuan.html">
+            <img src="./asset/learning.png" alt="" width="300px" height="100px"></a>
+            <p>Tujuan</p>
+            </div>
+            </div>
+        </section>   
+    
+        <section id="materi">
+            <div><a href="materi.html">
+            <img src="./asset/reading.png" alt="" width="300px" height="100px"></a>
+            <p>Materi</p>
+            </div>
+        </section>
+
+        <section id="video">
+            <div><a href="video.html">
+            <img src="./asset/video.png" alt="" width="300px" height="100px"></a>
+            <p>Video</p>
+            </div>
+        </section>
+ 
+        <section id="simulasi">
+            <div><a href="simulasi.html">
+            <img src="./asset/simulasi.png" alt="" width="300px" height="100px"></a>
+            <p>Simulasi</p>
+            </div>
+        </section>
+
+        <section id="evaluasi">
+            <div><a href="evaluasi.html">
+            <img src="./asset/evaluasi.png" alt="" width="300px" height="100px"></a>
+            <p>Evaluasi</p>
+            </div>
+        </section> </p>
+    </div>
+
+    
+    <footer class="wrapper" style="text-align: center;">Copyright &copy; ayu</footer>
+    
+
+    <script>
+        const btnLogin = document.getElementById("home");
+         btnLogin.addEventListener("click", function(){
+            alert("Selamat Datang, Anda sekarang berada di home")
+        })
+    </script>
+</body>
+</html>
