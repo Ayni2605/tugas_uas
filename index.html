@@ -3,8 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Pembelajaran</title>
+    <title>Media Pembelajaran Kimia</title>
+
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f6f8;
+        }
+
+    /* HEADER */
         .wrapper{
             display: flex;
             flex-wrap: wrap;
@@ -12,15 +25,20 @@
             justify-content: space-between;
             background-color: rgb(54, 135, 194);
             box-shadow: rgba(0, 0, 0, 0.5);
-            width: 100%;
-            height: 80px;
+            padding: 15px 40px;
+            color: white;
         }
-        .logo,img{
+       
+        .logo {
             display: flex;
-            padding: 5px;
-            width: 50px;
-            margin: auto left;
+            align-items: center;
+            gap: 10px;
         }
+
+        .logo img {
+            width: 50px;
+        }
+
         .nav,ul,li,a{
             list-style-type: none;
             display: flex;
@@ -30,119 +48,168 @@
             color: aliceblue;
             font-family: Arial, Helvetica, sans-serif;
         }
-        .gambar{
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 300px;
-        }
-        .container{
-            display: flex;
-            flex-wrap: wrap;
-            margin: 0;
-            padding: 20px;
-            align-items: center;
-            justify-content: space-between;
-        }
-        p{
-            align-items: center;
-            text-align: center;
-        }
-        .copyright_footer{    
-            color: rgb(200, 200, 217);
-            line-height: 3;
-            width: 100%;
-            text-align: center;
-            align-items: center;
-        }
+        
         .active{
             background-color: rgba(3, 3, 2, 0.5);
             color: white;
             padding: 5px;
             border-radius: 5px;
         }
-        .nav>ul>li>a:hover{
-        color: rgb(3, 3, 2, 0.5);
-        transition: all .3s ease-in-out;
+        
+        /* HERO IMAGE */
+        
+        .gambar{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 300px;
+            object-fit: fill;
         }
-        .active:hover{
-        color: white !important;
+
+        /* MENU UTAMA */
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            padding: 40px;
+            align-items: center;
         }
+       
+         .menu-card {
+            background-color: white;
+            width: 260px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            text-align: center;
+            align-items: center;
+            padding: 20px;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+        
+        .menu-card img {
+            display: block;
+            margin: 0 auto 15px auto;
+        }
+
+
+         .menu-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+        }
+         .menu-card img {
+            width: 120px;
+            margin-bottom: 15px;
+        }
+         .menu-card p {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: rgb(54, 135, 194);
+            padding: 15px;
+            margin-top: 40px;
+        }
+
+        .copyright_footer{    
+            color: #eaeaea;
+            line-height: 3;
+            width: 100%;
+            text-align: center;
+            align-items: center;
+        }
+
+        
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .wrapper {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+        
     </style>
 </head>
 <body>
+
+    <!-- HEADER -->
      <header>
         <div class="wrapper">
             <div class="logo">
                 <img src="https://png.pngtree.com/png-vector/20240314/ourmid/pngtree-trendy-chlorofluorocarbon-concepts-png-image_11953966.png" alt="">
-            <div style="color: aliceblue; font-family: Georgia, 'Times New Roman', Times, serif;">Media Pembelajaran Kimia</div></div>   
-        <div class="nav">
+                <h2>Media Pembelajaran Kimia</h2>
+            </div>   
+        <nav class="nav">
             <ul>
-                <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#tujuan">Tujuan</a></li>
-                <li><a href="#materi">Materi</a></li>
-                <li><a href="#video">Video</a></li>
-                <li><a href="#simulasi">Simulasi</a></li>
-                <li><a href="#evaluasi">Evaluasi</a></li>
+                <li><a href="login.html" class="active">Belajar Sekarang</a></li>
+               
             </ul>
-        </div>  
+        </nav>  
         </div>
-        <div>
         <img src="./asset/bg.png" alt="" class="gambar"> 
-        </div>
      </header>
     
+     <!-- MENU UTAMA -->
     <div class="container">
-        <section id="home">
-            <div>
-                <div><a href="#"><img src="./asset/house.png" alt="" width="300px" height="100px"></a>
-                <p>Home</p>
-                </div> 
-            </div>
-        </section>
+        <div class="menu-card">
+            <a href="materi.html">
+            <img src="./asset/modul.png" ></a>
+            <p>Modul</p>
+        </div>
 
-        <section id="tujuan">
-            <div>
-            <div><a href="tujuan.html">
-            <img src="./asset/learning.png" alt="" width="300px" height="100px"></a>
-            <p>Tujuan</p>
-            </div>
-            </div>
-        </section>   
-    
-        <section id="materi">
-            <div><a href="materi.html">
-            <img src="./asset/reading.png" alt="" width="300px" height="100px"></a>
-            <p>Materi</p>
-            </div>
-        </section>
-
-        <section id="video">
-            <div><a href="video.html">
-            <img src="./asset/video.png" alt="" width="300px" height="100px"></a>
+        <div class="menu-card">
+            <a href="video.html">
+            <img src="./asset/video.png" ></a>
             <p>Video</p>
-            </div>
-        </section>
- 
-        <section id="simulasi">
-            <div><a href="simulasi.html">
-            <img src="./asset/simulasi.png" alt="" width="300px" height="100px"></a>
-            <p>Simulasi</p>
-            </div>
-        </section>
+        </div>
 
-        <section id="evaluasi">
-            <div><a href="evaluasi.html">
-            <img src="./asset/evaluasi.png" alt="" width="300px" height="100px"></a>
-            <p>Evaluasi</p>
-            </div>
-        </section> </p>
+        <div class="menu-card">
+            <a href="tujuan.html">
+            <img src="./asset/kuis.png" ></a>
+            <p>Kuis</p>
+        </div>
+
+        <div class="menu-card">
+            <a href="simulasi.html">
+            <img src="./asset/latihan_soal.png" ></a>
+            <p>Latihan Soal</p>
+        </div>
+
+        <div class="menu-card">
+            <a href="simulasi.html">
+            <img src="./asset/laporan_belajar.png" ></a>
+            <p>Laporan Belajar</p>
+        </div>
+
+        <div class="menu-card">
+            <a href="evaluasi.html">
+            <img src="./asset/simulasi.png" ></a>
+            <p>Ambis Test</p>
+        </div>
+
+        <div class="menu-card">
+            <a href="simulasi.html">
+            <img src="./asset/game-edukatif.png" ></a>
+            <p>Game Edukatif</p>
+        </div>
+
+        <div class="menu-card">
+            <a href="simulasi.html">
+            <img src="./asset/konsultasi.png" ></a>
+            <p>Konsultasi</p>
+        </div>
+    
     </div>
   
-    <footer class="wrapper">
+    <!-- FOOTER -->
+    <footer>
         <div class="copyright_footer">Copyright &copy; 2025 web pembelajaran_ayu</div>
     </footer>
-    
+
+    <!-- JS -->
     <script>
         const btnLogin = document.getElementById("home");
          btnLogin.addEventListener("click", function(){
